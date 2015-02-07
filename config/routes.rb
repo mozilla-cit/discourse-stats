@@ -1,3 +1,5 @@
 Stats::Engine.routes.draw do
-  get "categories" => "stats#categories"
+  namespace :stats, path: "" do
+    get "categories" => "stats#categories"
+  end
 end
